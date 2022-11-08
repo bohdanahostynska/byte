@@ -4,14 +4,13 @@ console.log(userName);
 userName = "Daryna";
 console.log(userName);
 
-let userSurname = "Hostynska";
+const userSurname = "Hostynska";
 console.log(userSurname);
 
-let userAge = "34";
+const userAge = "34";
 console.log(userAge);
 
-let shoppingList;
-shoppingList = "apples" + "  " + "potatoes" + " " + "milk";
+const shoppingList =  "apples" + "  " + "potatoes" + " " + "milk";
 console.log(typeof shoppingList, shoppingList);
 
 const isUserOnline = true;
@@ -21,7 +20,8 @@ workerSalary = 2000;
 console.log(workerSalary);
 
 let mouseCoordinates;
-mouseCoordinates = 190;
+console.log(mouseCoordinates);
+
 
 let firstVariable = "Hello world"
 console.log(firstVariable);
