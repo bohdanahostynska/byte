@@ -79,14 +79,17 @@
 
 //5//
 
+const visitors = Number(prompt( "Скільки вам років?"));
 const minAge = 18;
 const retireAge = 60;
-const visitorAge = Number(prompt( "Скільки вам років?"));
+const visitorAge = 12;
 const withAdults = confirm ("Ви з дорослими?");
-if ( visitorAge >= minAge){
-    console.log("Ласкаво просимо!")
-}else if ( visitorAge >= retireAge  || withAdults){
-    console.log("Ласкаво просимо!");
-} else  if ( visitorAge < minAge ){
-    console.log("Вибачте,але ви не можете увійти");
+if ( visitors >= minAge){
+    alert("Ласкаво просимо!")
+}else if ( visitors >= retireAge || withAdults){
+    alert("Ласкаво просимо!");
+} else  if ( visitors < visitorAge ){
+    alert("Вибачте,але ви не можете увійти");
+} else {
+    alert("Вибачте,але ви не можете увійти");
 }
