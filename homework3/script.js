@@ -44,11 +44,11 @@
 //  let result;
 
 //  if ( x > y) {
-//      result = "Перше число є більшим, ніж друге";
+//      alert = "Перше число є більшим, ніж друге";
 //  } else if ( x < y){
-//     result =  "Перше число є меншим, ніж друге";
+//      alert =  "Перше число є меншим, ніж друге";
 //  } else {
-//     result = "Числа є рівними"
+//      alert = "Числа є рівними"
 //  }
 
 //  console.log("result",result);
@@ -79,17 +79,22 @@
 
 //5//
 
-const visitors = Number(prompt( "Скільки вам років?"));
+
 const minAge = 18;
-const retireAge = 60;
-const visitorAge = 12;
+const visitorsAge = Number(prompt( "Скільки вам років?"));
 const withAdults = confirm ("Ви з дорослими?");
-if ( visitors >= minAge){
-    alert("Ласкаво просимо!")
-}else if ( visitors >= retireAge || withAdults){
+
+if ( visitorsAge >= 18){
     alert("Ласкаво просимо!");
-} else  if ( visitors < visitorAge ){
+} else if ( visitorsAge >= 12 || withAdults ){
+    alert("Ласкаво просимо!") ;
+} else if ( visitorsAge >= 60 || withAdults ){
+    alert("Ласкаво просимо!") ;       
+} else if ( visitorsAge < 12 ){
+    alert("Вибачте,але ви не можете увійти");     
+} else if( visitorsAge >= 80 ){
     alert("Вибачте,але ви не можете увійти");
 } else {
     alert("Вибачте,але ви не можете увійти");
 }
+console.log( visitorsAge );
