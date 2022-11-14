@@ -1,21 +1,21 @@
 //1//
 
-const a = 5;
-const b = 10;
-let operationResult = a + b;
-console.log(" 5 + 10 =" , operationResult , "addition");
+// const a = 5;
+// const b = 10;
+// let getSum = a + b;
+// console.log(getSum, "addition");
 
-let operationResult1 = a - b;
-console.log(" 5 - 10 =" , operationResult1 ,"substraction");
+// let operationResult1 = a - b;
+// console.log(operationResult1, "substraction");
 
-let operationResult2 = a * b;
-console.log(" 5 * 10 =" , operationResult2 ,"multiplication");
+// let operationResult2 = a * b;
+// console.log(operationResult2, "multiplication");
 
-let operationResult3 = a / b;
-console.log(" 5 / 10 =" , operationResult3 , "division");
+// let operationResult3 = a / b;
+// console.log(operationResult3, "division");
 
 
- //2//
+//2//
 
 
 // true && true                                        true
@@ -36,62 +36,57 @@ console.log(" 5 / 10 =" , operationResult3 , "division");
 
 //3//
 
-// const compare = Number(prompt ( " Введіть два числа: "));
+// const x = Number(prompt ( " Введіть число: "));
+// const y= Number(prompt ( " Введіть число: "));
 // alert ( "Яке число є більшим?");
 
-//  const x = 10 ;
-//  const y = 3 ;
 
 //  let result;
 
 //  if ( x > y) {
 //      result = "Перше число є більшим, ніж друге";
-//  } 
- 
+//  } else if ( x < y){
+//     result =  "Перше число є меншим, ніж друге";
+//  } else {
+//     result = "Числа є рівними"
+//  }
+
 //  console.log("result",result);
-
-//  var c = 5 ;
-//  var d = 5 ;
-
-//  let result1;
-
-//  if ( c == d) {
-//      result1 = "Числа є рівними";
-//  } 
-
-//  console.log("result1",result1);
 
 
 //4//
 
 
+// const e = Number(prompt(" Введіть число: "));
 
-// const operationAddition = Number(prompt ( " Знайдіть суму чисел: "));
+// const f = Number(prompt(" Введіть число: "));
+
+// alert("Знайти суму чисел");
+
+// let getSum1 = e + f;
+
+// alert(getSum1);
 
 
-// const e = 8;
-// const f = 5;
+// switch (getSum1) {
+//     case "getSum1 ":
 
-// let operationResult4 = e + f;
-// alert (operationResult4 );
-
-
-// switch (operationAddition){
-//     case "e + f":   
-  
-//     break;
+//         break;
 
 // }
 
-// console.log (operationResult4 );
+// console.log(getSum1);
 
 //5//
 
-// const minAge = 12;
-// const visitorAge = Number(prompt( "Скільки вам років?"));
-// const withAdults = confirm ("Ви з дорослими?");
-// if ( visitorAge >= minAge || withAdults){
-//     console.log("Ласкаво просимо!")
-// }else{
-//     console.log("Вам недостаньо років для того,щоб увійти")
-// }
+const minAge = 18;
+const retireAge = 60;
+const visitorAge = Number(prompt( "Скільки вам років?"));
+const withAdults = confirm ("Ви з дорослими?");
+if ( visitorAge >= minAge){
+    console.log("Ласкаво просимо!")
+}else if ( visitorAge >= retireAge  || withAdults){
+    console.log("Ласкаво просимо!");
+} else  if ( visitorAge < minAge ){
+    console.log("Вибачте,але ви не можете увійти");
+}
