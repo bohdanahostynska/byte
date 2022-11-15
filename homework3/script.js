@@ -6,7 +6,7 @@
 // console.log(getSum, "addition");
 
 // let operationResult1 = a - b;
-// console.log(operationResult1, "substraction");
+// console.log(operationResult1, "subtraction");
 
 // let operationResult2 = a * b;
 // console.log(operationResult2, "multiplication");
@@ -25,7 +25,7 @@
 // null == undefined                                   true
 // '' == 0                                             true
 // 1 === '1'                                           false
-// NaN === NaN && true                                 true
+// NaN === NaN && true                                 false
 // true || false && true || false,true||false||false   true
 // (true || false) && (true || false)                  true
 // 10 || 0 && 'dog' || '',  10 || 0 || '',10           true
@@ -56,44 +56,50 @@
 
 //4//
 
+// const e = Number(prompt(" Введіть перше число: "));
 
-// const e = Number(prompt(" Введіть число: "));
+// const f = Number(prompt(" Введіть друге число: "));
 
-// const f = Number(prompt(" Введіть число: "));
-
-// alert("Знайти суму чисел");
-
-// let getSum1 = e + f;
-
-// alert(getSum1);
+// const operation = prompt("Яку дію ви хочете провести?");
 
 
-// switch (getSum1) {
-//     case "getSum1 ":
+// console.log("a");
 
-//         break;
+// switch (operation) {
+//         case '+': 
+//             alert (e + f);
+//            break;         
+//         case '-':
+//             alert (e -f);   
+//             break;
+//         case '*':
+//              alert (e * f);
+//             break;
+//         case '/': 
+//         alert(e / f);
+//             break;  
+//             default:
+//                 console.log(operation);           
+//     }
 
-// }
-
-// console.log(getSum1);
 
 //5//
 
 
 const minAge = 18;
 const visitorsAge = Number(prompt("Скільки вам років?"));
-const withAdults = confirm("Ви з дорослими?");
+let withAdults;
 
-if (visitorsAge >= 18) {
+
+if ((visitorsAge >= 12 && visitorsAge < 18)||(visitorsAge > 60 && visitorsAge < 80) && withAdults){
+     withAdults = confirm("Ви з дорослими?");
+     alert("Ласкаво просимо!");
+} else if ( visitorsAge >=18 && visitorsAge <=60) { 
+    alert ("Ласкаво просимо!");
+} else if ((visitorsAge >=12 || visitorsAge > 60) && withAdults) {
     alert("Ласкаво просимо!");
-} else if (visitorsAge > 12 && visitorsAge < 18 && withAdults) {
-    alert("Ласкаво просимо!");
-} else if (visitorsAge > 60 &&  visitorsAge < 80 && withAdults) {
-    alert("Ласкаво просимо!");
-} else if (visitorsAge < 12 && visitorsAge > 80) {
+ } else {
     alert("Вибачте,але ви не можете увійти");
-} else {
-    alert("Вибачте,але ви не можете увійти");
-}
+ }
 
 console.log(visitorsAge)
