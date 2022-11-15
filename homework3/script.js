@@ -81,20 +81,19 @@
 
 
 const minAge = 18;
-const visitorsAge = Number(prompt( "Скільки вам років?"));
-const withAdults = confirm ("Ви з дорослими?");
+const visitorsAge = Number(prompt("Скільки вам років?"));
+const withAdults = confirm("Ви з дорослими?");
 
-if ( visitorsAge >= 18){
+if (visitorsAge >= 18) {
     alert("Ласкаво просимо!");
-} else if ( visitorsAge >= 12 || withAdults ){
-    alert("Ласкаво просимо!") ;
-} else if ( visitorsAge >= 60 || withAdults ){
-    alert("Ласкаво просимо!") ;       
-} else if ( visitorsAge < 12 ){
-    alert("Вибачте,але ви не можете увійти");     
-} else if( visitorsAge >= 80 ){
+} else if (visitorsAge > 12 && visitorsAge < 18 && withAdults) {
+    alert("Ласкаво просимо!");
+} else if (visitorsAge > 60 &&  visitorsAge < 80 && withAdults) {
+    alert("Ласкаво просимо!");
+} else if (visitorsAge < 12 && visitorsAge > 80) {
     alert("Вибачте,але ви не можете увійти");
 } else {
     alert("Вибачте,але ви не можете увійти");
 }
-console.log( visitorsAge );
+
+console.log(visitorsAge)
