@@ -86,20 +86,25 @@
 //5//
 
 
-const minAge = 18;
-const visitorsAge = Number(prompt("Скільки вам років?"));
-let withAdults;
+// const minAge = 18;
+// const visitorsAge = Number(prompt("Скільки вам років?"));
+// let withAdults;
 
 
-if ((visitorsAge >= 12 && visitorsAge < 18)||(visitorsAge > 60 && visitorsAge < 80) && withAdults){
-     withAdults = confirm("Ви з дорослими?");
-     alert("Ласкаво просимо!");
-} else if ( visitorsAge >=18 && visitorsAge <=60) { 
-    alert ("Ласкаво просимо!");
-} else if ((visitorsAge >=12 || visitorsAge > 60) && withAdults) {
-    alert("Ласкаво просимо!");
- } else {
-    alert("Вибачте,але ви не можете увійти");
- }
+// if ((visitorsAge >= 12 && visitorsAge < 18) && withAdults){
+//      withAdults = confirm("Ви з дорослими?");
+//      alert("Ласкаво просимо!");
+//  } else if ( visitorsAge >=18 && visitorsAge <=60) { 
+//         alert ("Ласкаво просимо!");
+//  } else if (visitorsAge >= 60 && visitorsAge <= 80 && withAdults) { 
+//     withAdults = confirm("Ви з дорослими?");
+//         alert ("Ласкаво просимо!");   
+// // } else if ((visitorsAge >=12 && visitorsAge > 60) && withAdults) {
+// //     withAdults = confirm("Ви з дорослими?");
+// //     alert("Ласкаво просимо!");
+// //  } else  {
+// //     alert("Вибачте,але ви не можете увійти");
+// //  }
+// }
+// console.log(visitorsAge)
 
-console.log(visitorsAge)
