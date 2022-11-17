@@ -15,7 +15,6 @@
 //   areNumberseven();
 
 
-
   //2//
 
 // function calcSum( ) {
@@ -33,11 +32,11 @@
     // const a = Number (prompt("Введіть перше число:"));
     // const b = Number (prompt("Введіть друге число:"));  
 
-    // const calcSum = ( a, b) => (a + b);
+    // const calcSum = ( a, b) => a + b;
 
     // alert (a + b);
 
-    // calcSum( );
+    // letfirstResSum = calcSum(a,b );
 
 //3//
 
@@ -52,10 +51,11 @@
 //       }
 //       calcExponentiation ( ) 
 
-// function calcExponentiation ( a, b = 1 ) {
-//         return a**b;
+// function calcExponentiation ( number, power = 2 ) {
+//         return number ** power
 //       }
-//       calcExponentiation ( a, b );
+//    const resultPower = calcExponentiation (7);
+//    console.log('calcExponentiation result',resultPower);
 
 
 
