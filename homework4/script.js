@@ -8,11 +8,13 @@
 //     if ( a==b){
 //         alert ("Числа є рівні");
 //         console.log(a==b);
-//     }else{
+//     } else {
 //         return false;
 //     }
 //   }
 //   areNumberseven();
+
+
 
   //2//
 
@@ -26,19 +28,16 @@
 
 //   }
   
-//   calculate( );
+//   calcSum( );
 
+    // const a = Number (prompt("Введіть перше число:"));
+    // const b = Number (prompt("Введіть друге число:"));  
 
-//  function calcSum( ) {
-//     const x = Number (prompt("Введіть перше число:"));
-//     const y = Number (prompt("Введіть друге число:"));  
+    // const calcSum = ( a, b) => (a + b);
 
-//     var func = (x, y) => { return x + y; }; 
-//     alert (x + y);
+    // alert (a + b);
 
-// }
-  
-//  calcSum( );
+    // calcSum( );
 
 //3//
 
@@ -51,7 +50,14 @@
 //         } 
     
 //       }
-//       calcExponentiation ( )   
+//       calcExponentiation ( ) 
+
+// function calcExponentiation ( a, b = 1 ) {
+//         return a**b;
+//       }
+//       calcExponentiation ( a, b );
+
+
 
 //4//
 
@@ -82,18 +88,15 @@
 
 //5//
 
-function getDetails() {
-        const userName = prompt("Як вас звати?");
-        const userAge = Number (prompt("Скільки вам років?"));
+// function getDetails() {
+//         const userName = prompt("Як вас звати?");
+//         const userAge = Number (prompt("Скільки вам років?"));
 
-       let text;
-       let message = text + userName;
+//        if (userAge >=30 ){
+//         alert ( "Вітаю," + userName);
+//        } else if ( userAge < 30 ){
+//         alert ("Привіт," + userName);
+//        }
+//     }       
 
-       if (userAge >=30 ){
-        alert ( "Вітаю," + userName);
-       } else if ( userAge < 30 ){
-        alert ("Привіт," + userName);
-       }
-    }       
-
-    getDetails()
+//     getDetails()
