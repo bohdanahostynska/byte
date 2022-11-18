@@ -56,7 +56,7 @@ function calcExponentiation ( number, power = 2 ) {
         return number ** power
       }
 
-   const number = Number (prompt("Введіть перше число:"));
+   const number = Number (prompt("Введіть число:"));
    const resultPower = calcExponentiation (7);
    console.log('calcExponentiation result',resultPower);
 
