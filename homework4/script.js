@@ -58,6 +58,7 @@ function calcExponentiation ( number, power = 2 ) {
 
    const number = Number (prompt("Введіть число:"));
    const resultPower = calcExponentiation (7);
+   alert(resultPower);
    console.log('calcExponentiation result',resultPower);
 
 
