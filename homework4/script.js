@@ -1,18 +1,18 @@
 
 //1//
-// function areNumberseven() {
-//     const a =Number (prompt("Введіть перше число:"));
-//     const b =Number (prompt("Введіть друге число:"));
+function areNumberseven() {
+    const a =Number (prompt("Введіть перше число:"));
+    const b =Number (prompt("Введіть друге число:"));
 
 
-//     if ( a==b){
-//         alert ("Числа є рівні");
-//         console.log(a==b);
-//     } else {
-//         return false;
-//     }
-//   }
-//   areNumberseven();
+    if ( a==b){
+        alert ("Числа є рівні");
+        console.log(true);
+    } else {
+      console.log(false);
+    }
+  }
+  areNumberseven();
 
 
 
@@ -52,14 +52,14 @@
 //       }
 //       calcExponentiation ( ) 
 
-function calcExponentiation ( number, power = 2 ) {
-        return number ** power
-      }
+// function calcExponentiation ( number, power = 2 ) {
+//         return number ** power
+//       }
 
-   const number = Number (prompt("Введіть число:"));
-   const resultPower = calcExponentiation (7);
-   alert(resultPower);
-   console.log('calcExponentiation result',resultPower);
+//    const number = Number (prompt("Введіть число:"));
+//    const resultPower = calcExponentiation (7);
+//    alert(resultPower);
+//    console.log('calcExponentiation result',resultPower);
 
 
 
