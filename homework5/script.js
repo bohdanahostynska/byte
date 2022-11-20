@@ -114,15 +114,35 @@
     //     console.log("j",j);
     //  }
 
-    let d = 1;
-    while (d <= 10) { 
-      console.log("d",d);
-      d++;
-    }
+    // let d = 1;
+    // while (d <= 10) { 
+    //   console.log("d",d);
+    //   d++;
+    // }
      
 
-    let e = 20;
-    while (e >= 10) { 
-      console.log("e",e);
-      e++;
-    }
+    // let i = 20;
+    // while (i >= 10) { 
+    //   console.log("i",i);
+    //   i--;
+    // }
+
+ //2//
+
+
+ const n= Number(prompt("Введіть число до якого рахувати прості числа:"));
+
+ showPrimenumbers:
+
+ for (let i = 2; i <= n; i++) { 
+ 
+   for (let j = 2; j < i; j++) { 
+     if (i % j == 0) continue showPrimenumbers; 
+     console.log("i",i);
+   }
+ 
+   alert( i ); 
+ }
+ 
+
+  
