@@ -102,5 +102,27 @@
 
 // authorize();
 
+//2//
 
+	// for (let i = 1; i < 10; i++) {
+	//    const a = i;
+    //    console.log("i",i);
+	// }
 
+    // for (let j = 20; j >=10; j--) {
+    //     const b = j;
+    //     console.log("j",j);
+    //  }
+
+    let d = 1;
+    while (d <= 10) { 
+      console.log("d",d);
+      d++;
+    }
+     
+
+    let e = 20;
+    while (e >= 10) { 
+      console.log("e",e);
+      e++;
+    }
