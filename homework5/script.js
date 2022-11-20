@@ -127,22 +127,41 @@
     //   i--;
     // }
 
+  //   let d = 1;
+
+  // do {
+  //  d <=10;
+  //   console.log( "d",d);
+  //   d++;
+  // } while (d <=10);
+
+
+  // let i = 20;
+
+  // do {
+
+  //  i >=10;
+  //   console.log( "i",i);
+  //   i--;
+
+  // } while (i >=10);
+
  //2//
 
 
- const n= Number(prompt("Введіть число до якого слід вирахувати прості числа:"));
+//  const n= Number(prompt("Введіть число до якого слід вирахувати прості числа:"));
 
- showPrimenumbers:
+//  showPrimenumbers:
 
- for (let i = 2; i <= n; i++) { 
+//  for (let i = 2; i <= n; i++) { 
  
-   for (let j = 2; j < i; j++) { 
-     if (i % j == 0) continue showPrimenumbers; 
-     console.log("i",i);
-   }
+//    for (let j = 2; j < i; j++) { 
+//      if (i % j == 0) continue showPrimenumbers; 
+//      console.log("i",i);
+//    }
  
-   alert( i ); 
- }
+//    alert( i ); 
+//  }
  
 
   

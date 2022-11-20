@@ -1,18 +1,18 @@
 
 //1//
-function areNumberseven() {
-    const a =Number (prompt("Введіть перше число:"));
-    const b =Number (prompt("Введіть друге число:"));
+// bytefunction areNumberseven() {
+//     const a =Number (prompt("Введіть перше число:"));
+//     const b =Number (prompt("Введіть друге число:"));
 
 
-    if ( a==b){
-        alert ("Числа є рівні");
-        console.log(true);
-    } else {
-      console.log(false);
-    }
-  }
-  areNumberseven();
+//     if ( a==b){
+//         alert ("Числа є рівні");
+//         console.log(true);
+//     } else {
+//       console.log(false);
+//     }
+//   }
+//   areNumberseven();
 
 
 
