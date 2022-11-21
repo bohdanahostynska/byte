@@ -1,4 +1,3 @@
-
 // const LOGIN = "ADMIN";
 // const PASSWORD = "123456";
 
@@ -53,7 +52,7 @@
 
 // const desiredHeight = Number (prompt ("Якою повинна бути висота піраміди?"));
 // drawPyramid(desiredHeight)
-                              //HOMEWORK//
+//HOMEWORK//
 
 //3//
 
@@ -65,88 +64,89 @@
 //     let userPassword;
 //     let isAuthsuccess = false;
 
-//     userLogin = prompt(" Логін:");
-//     userPassword = prompt("Пароль:");
 
 //     if (userPassword === PASSWORD || userLogin === LOGIN) {
 //         isAuthsuccess = true;
 //         alert("Welcome");
+    
 //     }
+    
 
-//     do {
+//     let i;
 
-//         for (let i = 1; i <= 3; i++) {
+//     while (i=1, i<=3, i++) {
 
-//             userLogin = prompt(" Логін:");
-//             if (!userLogin) {
-//                 alert("Введіть ваш логін");
-//                 continue;
-//             }
+//         console.log("i",i);
 
-//             userPassword = prompt("Пароль:");
-//             if (!userPassword) {
-//                 alert("Введіть ваш пароль");
-//                 continue;
-//             }
+//         userLogin = prompt(" Логін:");
+//         if (!userLogin) {
+//             alert("Введіть ваш логін");
+//             continue;
+//         }
+//         userPassword = prompt("Пароль:");
+//         if (!userPassword) {
 
-//             if (userPassword !== PASSWORD || userLogin !== LOGIN) {
-//                 isAuthsuccess = false;
-//                 alert("Ваш дані невірні. Будь ласка, перевірте їх і спробуйте ще раз");
-//            } 
-//        } while (isAuthsuccess);
-//         alert("Вибачте,але ви перевищили кількість спроб"); 
+//             alert("Введіть ваш пароль");
+//             continue;
+//         }
 
-// }while (!isAuthsuccess);
+//         if(userPassword !== PASSWORD || userLogin !== LOGIN){
+//             isAuthsuccess = false;
+//             alert("Ваш дані невірні. Будь ласка, перевірте їх і спробуйте ще раз");
+//             continue;
+//         }
 
-// }
+//     }  
+
+// } 
 
 // authorize();
 
 //1//
 
-	// for (let i = 1; i < 10; i++) {
-	//    const a = i;
-    //    console.log("i",i);
-	// }
+// for (let i = 1; i < 10; i++) {
+//    const a = i;
+//    console.log("i",i);
+// }
 
-    // for (let j = 20; j >=10; j--) {
-    //     const b = j;
-    //     console.log("j",j);
-    //  }
+// for (let j = 20; j >=10; j--) {
+//     const b = j;
+//     console.log("j",j);
+//  }
 
-    // let d = 1;
-    // while (d <= 10) { 
-    //   console.log("d",d);
-    //   d++;
-    // }
-     
-
-    // let i = 20;
-    // while (i >= 10) { 
-    //   console.log("i",i);
-    //   i--;
-    // }
-
-  //   let d = 1;
-
-  // do {
-  //  d <=10;
-  //   console.log( "d",d);
-  //   d++;
-  // } while (d <=10);
+// let d = 1;
+// while (d <= 10) { 
+//   console.log("d",d);
+//   d++;
+// }
 
 
-  // let i = 20;
+// let i = 20;
+// while (i >= 10) { 
+//   console.log("i",i);
+//   i--;
+// }
 
-  // do {
+//   let d = 1;
 
-  //  i >=10;
-  //   console.log( "i",i);
-  //   i--;
+// do {
+//  d <=10;
+//   console.log( "d",d);
+//   d++;
+// } while (d <=10);
 
-  // } while (i >=10);
 
- //2//
+// let i = 20;
+
+// do {
+
+//  i >=10;
+//   console.log( "i",i);
+//   i--;
+
+// } while (i >=10);
+
+//2//
 
 
 //  const n= Number(prompt("Введіть число до якого слід вирахувати прості числа:"));
@@ -154,14 +154,11 @@
 //  showPrimenumbers:
 
 //  for (let i = 2; i <= n; i++) { 
- 
+
 //    for (let j = 2; j < i; j++) { 
 //      if (i % j == 0) continue showPrimenumbers; 
 //      console.log("i",i);
 //    }
- 
+
 //    alert( i ); 
 //  }
- 
-
-  
