@@ -1,65 +1,4 @@
-//Practice//
 
-//1//
-
-// const getRGBfromHex =(hexCode)=>{
-
-//     const red =hexCode.slice(1, 3);
-//     const green =hexCode.slice(3, 5);
-//     const blue =hexCode.slice(5, 7);
-
-//     console.log("red",red);
-//     console.log("green",green);
-//     console.log("blue",blue);
-
-//     const decimalRed = parseInt (red, 16);
-//     const decimalGreen = parseInt (green, 16);
-//     const decimalBlue = parseInt (blue, 16);
-
-//     return `rgb(${decimalRed},${decimalGreen},${decimalBlue})`
-// }
-
-// const rgbResult = getRGBfromHex("#ffffff");
-// console.log("rgbResult",rgbResult);
-
-//2//
-// const getHexFromRGB = (r, g, b) => {
-//     return `#${r.toString(16)}${g.toString(16)}${b.toString(16)}`
-//   }
-// const resultHex = getHexFromRGB(123, 34, 78);
-// console.log(`resultHex`, resultHex);
-
-// const maskCreditCard = (cardNumber) => {
-//     const MASK = '****';
-//     let result = '';
-  
-//     for(let i = 0, j = 1; i < cardNumber.length; i += 4, j++) {
-//       const numbers = cardNumber.slice(i, i + 4);
-//       let maskingResult;
-//       console.log(`numbers`, numbers);
-  
-//       if (j === 2 || j === 3) {
-//         maskingResult = MASK
-//       } else {
-//         maskingResult = numbers
-//       }
-  
-//       if (j !== 4) {
-//         result += `${maskingResult} `
-//       } else {
-//         result += maskingResult
-  
-//       }
-  
-  
-//     }
-  
-//     return result
-//   }
-  
-//   const res = maskCreditCard('5168111147864573');
-  
-//   console.log(`res`, res)
 
                             //Homework//
 
@@ -67,68 +6,83 @@
     //1//
 
 
+// const getDetails = () =>{
+// let userPassword;
 
-const getDetails = () =>{
+// do {
 
+//     userName = prompt(" Ваше ім'я:");
+//  if (!userName){
+//     alert("Введіть ваше ім'я:");
+//     continue;
+//  }
 
-do {
-
-    userName = prompt(" Ваше ім'я:");
- if (!userName){
-    alert("Введіть ваше ім'я:");
-    continue;
- }
-
- let properName = userName[0].toUpperCase() + userName.slice(1).toLowerCase();
- let res = properName;
+//  let properName = userName[0].toUpperCase() + userName.slice(1).toLowerCase();
+//  let res = properName;
  
- if(userName[0].toUpperCase() + userName.slice(1).toLowerCase()){
-    alert(properName)
- }
+//  if(userName[0].toUpperCase() + userName.slice(1).toLowerCase()){
+//     alert(properName)
+//  }
 
- userSurName = prompt(" Ваше прізвище:");
- if (!userSurName){
-    alert("Введіть ваше прізвище:");
-    continue;
- }
+//  userSurName = prompt(" Ваше прізвище:");
+//  if (!userSurName){
+//     alert("Введіть ваше прізвище:");
+//     continue;
+//  }
 
- let properSurName = userSurName[0].toUpperCase() + userSurName.slice(1).toLowerCase();
- let result = properSurName;
+//  let properSurName = userSurName[0].toUpperCase() + userSurName.slice(1).toLowerCase();
+//  let result = properSurName;
  
- if(userSurName[0].toUpperCase() + userSurName.slice(1).toLowerCase()){
-    alert(properSurName)
- }
- console.log('res',res);
- console.log('result',result);
+//  if(userSurName[0].toUpperCase() + userSurName.slice(1).toLowerCase()){
+//     alert(properSurName)
+//  }
+//  console.log('res',res);
+//  console.log('result',result);
 
- userPassword= prompt('Ваш пароль:')
-if (!userPassword){
-    alert("Введіть ваш пароль:");
-    continue;
- }
+// const succLogin = true;
 
- let properPassword;
+//  while(i = 1,  i<=3, i++){ 
 
-for (let i=1; i>=6; i++);
+    
+//  let j;
+//   let properPassword = j;
+//   for (let j =1; j < 6; j++){          
 
+// userPassword = prompt('Ваш пароль:')
+// if (!userPassword){
+//     alert("Введіть ваш пароль:");
+//     continue;
+// } 
 
-while (userPassword === properPassword){
-    alert("Ласкаво просимо!");  
-   return;
-} 
+// if (userPassword >= properPassword){
+//     alert("Ласкаво просимо!");  
+// return;
+// } else if (userPassword <= properPassword ) {
+//     alert("замало символів");  
+//     continue;
+// }
 
-if (userPassword !== properPassword){  
-    alert("Кількість символів не повинна бути менше шести");
-    alert("Спробуйте,будь ласка,ще раз")
-    return;
-}
+// }
+// }
+//  break;
 
- break;
-
-} while(true);
+// } while(true);
 
  
- alert("Ласкаво просимо!");
-}
+//  alert("Ласкаво просимо!");
+// }
 
-getDetails (); 
+// getDetails (); 
+
+
+
+
+//2//
+
+const a = Number(prompt("Введіть перше число:"));
+const b = Number(prompt("Введіть друге число:"));
+
+const getRandom = (max) => Math.random() * max;
+
+const getNumb = getRandom(a,b);
+ console.log(getNumb);
