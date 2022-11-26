@@ -1,88 +1,175 @@
+//Homework//
 
 
-                            //Homework//
+//1//
 
 
-    //1//
 
-
-// const getDetails = () =>{
+// let userName;
+// let userSurName;
 // let userPassword;
 
-// do {
+const upperCaseString = (userString) => {
 
-//     userName = prompt(" Ваше ім'я:");
-//  if (!userName){
-//     alert("Введіть ваше ім'я:");
-//     continue;
-//  }
+    const firstSymbolString = (userString[0]).toUpperCase();
+    const symbolString = (userString.slice(1)).toLowerCase();
 
-//  let properName = userName[0].toUpperCase() + userName.slice(1).toLowerCase();
-//  let res = properName;
- 
-//  if(userName[0].toUpperCase() + userName.slice(1).toLowerCase()){
-//     alert(properName)
-//  }
+    return firstSymbolString + symbolString;
+}
 
-//  userSurName = prompt(" Ваше прізвище:");
-//  if (!userSurName){
-//     alert("Введіть ваше прізвище:");
-//     continue;
-//  }
+const userRegistrationName = () => {
 
-//  let properSurName = userSurName[0].toUpperCase() + userSurName.slice(1).toLowerCase();
-//  let result = properSurName;
- 
-//  if(userSurName[0].toUpperCase() + userSurName.slice(1).toLowerCase()){
-//     alert(properSurName)
-//  }
-//  console.log('res',res);
-//  console.log('result',result);
+    let userName
 
-// const succLogin = true;
+    do {
+        userName = prompt("Введіть ваше ім'я:");
 
-//  while(i = 1,  i<=3, i++){ 
+        if (!userName) {
+            alert("Введіть хоча б один символ")
+        } else {
+            break
+        }
 
+    } while (true);
+
+    const upperCaseName = upperCaseString(userName)
+
+    return upperCaseName
+
+};
+
+const userRegistrationSurName = () => {
+
+    let userSurName
+    do {
+        userSurName = prompt("Введіть ваше прізвище:");
+
+        if (!userSurName) {
+            alert("Введіть хоча б один символ")
+        } else {
+            break
+        }
+
+    } while (true);
+
+    const upperCaseSurName = upperCaseString(userSurName)
+
+    return upperCaseSurName
+}
+const userRegistrationPassword = (userString) => {
+
+    let userPassword;
+    let userAttempts = 3;
+
+    while(userAttempts !==0) {
+
+        userPassword = prompt(" Введіть ваш пароль(не менше ,ніж 6 символів,які містять в собі символи різного реєстру):");
+
+        
+         if (!isNaN(userPassword || userPassword.toLowerCase() === userPassword || (userPassword.toUpperCase() === userPassword))) {
+            alert('Некоректний пароль')
+          } else if(userAttempts--||(!isNaN(userPassword || userPassword.toLowerCase() === userPassword || (userPassword.toUpperCase() === userPassword)))){
+             alert(`Данні помилкові.Кількість спроб залишилось:${userAttempts}`)
+          } else {
+            alert("Не залишилось більше спроб")
+            break
+        
+        }
+    } 
     
-//  let j;
-//   let properPassword = j;
-//   for (let j =1; j < 6; j++){          
+    // if(userPassword || userPassword.toLowerCase() === userPassword || (userPassword.toUpperCase() === userPassword)||userPassword.length>6){
+    //     alert("Вітаю!Реєстрація пройшла успішно!")
+    return userPassword
 
-// userPassword = prompt('Ваш пароль:')
-// if (!userPassword){
-//     alert("Введіть ваш пароль:");
-//     continue;
-// } 
+}
+const resName = userRegistrationName();
+const resSurName = userRegistrationSurName();
+const resPassword = userRegistrationPassword();
 
-// if (userPassword >= properPassword){
-//     alert("Ласкаво просимо!");  
-// return;
-// } else if (userPassword <= properPassword ) {
-//     alert("замало символів");  
-//     continue;
+alert(`Ви зареєстровані під іменем: ${resName} ${resSurName}
+Ваш пароль: ${resPassword} `);
+
+// function getDetails() {
+
+//     let userName;
+//     let userSurName;
+//     let properName;
+//     let properSurName;
+//     let isNotValidData = true;
+//     let userPassword;
+//     let yourProperPassword;
+
+
+//     do {
+
+//         userName = prompt(" Ваше ім'я:");
+//         userSurName = prompt(" Ваше прізвище:");
+//         userPassword = prompt(" Введіть ваш пароль(не менше ,ніж 6 символів,які містять в собі символи різного реєстру):");
+
+//         if (!userName) {
+//             alert("Введіть ваше ім'я:");
+//             continue;
+//         }
+
+//         properName = userName[0].toUpperCase() + userName.slice(1).toLowerCase();
+//         let res = properName;
+
+//         properSurName = userSurName[0].toUpperCase() + userSurName.slice(1).toLowerCase();
+
+//         if (!userSurName) {
+//             alert("Введіть ваше прізвище:");
+//             continue;
+//         }
+
+//         let result = properSurName;
+
+//         yourProperPassword = (userPassword.toLowerCase() === (userPassword.length >= 6)) && (userPassword.toUpperCase() === (userPassword.length >= 6));
+
+//         let result2 = yourProperPassword;
+
+
+//         if ( !userPassword) {
+//             alert("Введіть ваш пароль::");
+//             continue;
+//         }
+
+//         if(userPassword === yourProperPassword){
+//             alert("Реєстрація пройшла успішно!")
+//          }
+
+
+//         userPassword;
+//         for (let i=1; i<=3; i-1){  
+
+//         if(userPassword !== yourProperPassword){
+//             alert("Некоректний пароль.Спробуйте ще раз" );
+//             continue;
+//          } 
+//         } 
+
+//         } while (isNotValidData);
+
+
+
+//    alert("Вітаю,"  + properName + " "+ properSurName + userPassword);
 // }
 
-// }
-// }
-//  break;
+// // alert("Ласкаво просимо!");
 
-// } while(true);
-
- 
-//  alert("Ласкаво просимо!");
-// }
-
-// getDetails (); 
-
-
-
+// getDetails();
 
 //2//
 
-const a = Number(prompt("Введіть перше число:"));
-const b = Number(prompt("Введіть друге число:"));
+// const a = Number(prompt("Введіть перше число:"));
+// const b = Number(prompt("Введіть друге число:"));
 
-const getRandom = (max) => Math.random() * max;
+// const getRandom = (min,max) =>{  
 
-const getNumb = getRandom(a,b);
- console.log(getNumb);
+// const random = min + Math.random(min) =( max +1 -min);
+// return Math.floor(random);
+// } 
+// const getNumb = getRandom(a,b);
+
+//  console.log('getNumb',getNumb);
+
+//  alert(getNumb)
