@@ -64,9 +64,10 @@ const userRegistrationPassword = (userString) => {
 
         if (userPassword.split("").some(el => el.toUpperCase() === el) || (userPassword.split("").some(el => el.toLowerCase() === el)) ||(userPassword.split("").some(el => +el))){
             alert("Вітаю!Реєстрація пройшла успішно!")
-            return;
-         
+            isAuthSuccess = true;
+          return;       
         }
+
         if ( userPassword.length < 6){
             alert("Замало символів")
             continue;
@@ -80,7 +81,7 @@ const userRegistrationPassword = (userString) => {
         return userPassword
     }
     
-if(isAuthSuccess){
+if(isAuthSuccess){  
     alert("Вітаю!Реєстрація пройшла успішно!")
 }else{
     alert("Спроби закінчилися")
