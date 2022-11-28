@@ -54,6 +54,7 @@ const userRegistrationSurName = () => {
 const userRegistrationPassword = () => {
 
  let userPassword;
+ let userAttempts=3;
 
     do{
 
@@ -62,9 +63,11 @@ const userRegistrationPassword = () => {
         if(!userPassword || userPassword.length < 6){
             alert("Введіть не менше,ніж 6 чисел")
             continue;
-        }else if(!isNaN(userPassword) || userPassword.toLowerCase() === userPassword || (userPassword.toUpperCase() === userPassword)){
-            alert("Некоректний пароль")
-        }else{
+        }else if(userAttempts-- ||(!isNaN(userPassword) || userPassword.toLowerCase() === userPassword || (userPassword.toUpperCase() === userPassword))){
+            alert(`Некоректний пароль.Залишилось спроб:`+ userAttempts);
+        }else if ( !userAttempts){
+            alert("Спроби закінчилися")
+         }else{  
             alert("Реєстрація пройшла успішно!")
             break
         }
