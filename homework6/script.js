@@ -54,10 +54,11 @@ const userRegistrationSurName = () => {
 const userRegistrationPassword = () => {
 
  let userPassword;
- let userAttempts=3;
+ let userAttempts = 3;
+ let authSuccess = false;
 
     do{
-
+        userAttempts !== 0;
         userPassword = prompt(" Введіть ваш пароль(не менше ,ніж 6 символів,які містять в собі символи різного реєстру):");
         
         if(!userPassword || userPassword.length < 6){
@@ -65,7 +66,7 @@ const userRegistrationPassword = () => {
             continue;
         }else if(userAttempts-- ||(!isNaN(userPassword) || userPassword.toLowerCase() === userPassword || (userPassword.toUpperCase() === userPassword))){
             alert(`Некоректний пароль.Залишилось спроб:`+ userAttempts);
-        }else if ( !userAttempts){
+        } else if (!userAttempts){
             alert("Спроби закінчилися")
          }else{  
             alert("Реєстрація пройшла успішно!")
@@ -74,7 +75,15 @@ const userRegistrationPassword = () => {
 
     }while(true)
 
+    
+  if(authSuccess){
+    alert("Welcome")
+  }else{
+    ("Спроби закінчились")
+  }
+
   return userPassword;
+
 
 }
 
