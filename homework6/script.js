@@ -31,7 +31,7 @@ const userRegistrationName = () => {
 
     return upperCaseName
 
-};
+}
 
 const userRegistrationSurName = () => {
 
@@ -62,7 +62,7 @@ const userRegistrationPassword = () => {
         if(!userPassword || userPassword.length < 6){
             alert("Введіть не менше,ніж 6 чисел")
             continue;
-        }else if(isNaN(userPassword) || userPassword.toLowerCase() === userPassword || (userPassword.toUpperCase() === userPassword)){
+        }else if(!isNaN(userPassword) || userPassword.toLowerCase() === userPassword || (userPassword.toUpperCase() === userPassword)){
             alert("Некоректний пароль")
         }else{
             alert("Реєстрація пройшла успішно!")
@@ -70,7 +70,6 @@ const userRegistrationPassword = () => {
         }
 
     }while(true)
-    
 
   return userPassword;
 
