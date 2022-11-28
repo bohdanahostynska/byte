@@ -51,42 +51,28 @@ const userRegistrationSurName = () => {
 
     return upperCaseSurName
 }
-const userRegistrationPassword = (userString) => {
+const userRegistrationPassword = () => {
 
-    let userPassword;
-    let isAuthSuccess = false;
-    let userAttempts=3;
+ let userPassword;
 
-  
-       while(userAttempts !==0){  
+    do{
 
         userPassword = prompt(" Введіть ваш пароль(не менше ,ніж 6 символів,які містять в собі символи різного реєстру):");
-
-        if (userPassword.split("").some(el => el.toUpperCase() === el) || (userPassword.split("").some(el => el.toLowerCase() === el)) ||(userPassword.split("").some(el => +el))){
-            alert("Вітаю!Реєстрація пройшла успішно!")
-            isAuthSuccess = true;
-          return;       
+        
+        if(!userPassword || userPassword.length < 6){
+            alert("Введіть не менше,ніж 6 чисел")
+            continue;
+        }else if(isNaN(userPassword) || userPassword.toLowerCase() === userPassword || (userPassword.toUpperCase() === userPassword)){
+            alert("Некоректний пароль")
+        }else{
+            alert("Реєстрація пройшла успішно!")
+            break
         }
 
-        if ( userPassword.length < 6){
-            alert("Замало символів")
-            continue;
-        } else if   (userAttempts-- ||(!userPassword.split("").some(el => el.toUpperCase() === el) || (!userPassword.split("").some(el => el.toLowerCase() === el)) ||(!userPassword.split("").some(el => +el)))){
-            alert(`Данні помилкові.`+ userAttempts);
-            continue;
-        } 
-        
+    }while(true)
     
-   
-        return userPassword
-    }
-    
-if(isAuthSuccess){  
-    alert("Вітаю!Реєстрація пройшла успішно!")
-}else{
-    alert("Спроби закінчилися")
-}
 
+  return userPassword;
 
 }
 
@@ -113,3 +99,32 @@ alert(`Ви зареєстровані під іменем: ${resName} ${resSurN
 //  console.log('getNumb',getNumb);
 
 //  alert(getNumb)
+// const userRegistrationPassword = (userString) => {
+
+//     let userPassword;
+//     let isAuthSuccess = false;
+//     let userAttempts=3;
+
+  
+//        while(userAttempts !==0){  
+
+//         userPassword = prompt(" Введіть ваш пароль(не менше ,ніж 6 символів,які містять в собі символи різного реєстру):");
+
+//         if (userPassword.split("").some(el => el.toUpperCase() === el) || (userPassword.split("").some(el => el.toLowerCase() === el)) ||(userPassword.split("").some(el => +el))){
+//             alert("Вітаю!Реєстрація пройшла успішно!")
+//             isAuthSuccess = true;
+//           return;       
+//         }
+
+//         if ( userPassword.length < 6){
+//             alert("Замало символів")
+//             continue;
+//         } else if   (userAttempts-- ||(!userPassword.split("").some(el => el.toUpperCase() === el) || (!userPassword.split("").some(el => el.toLowerCase() === el)) ||(!userPassword.split("").some(el => +el)))){
+//             alert(`Данні помилкові.`+ userAttempts);
+//             continue;
+//         } 
+        
+    
+   
+//         return userPassword
+    // }
