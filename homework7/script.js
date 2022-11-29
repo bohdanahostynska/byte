@@ -26,19 +26,58 @@
 
 //1//
         
-let userTime = (prompt("Enter your time: "));
+// let userTime = (prompt("Enter your time: "));
 
 
+// let  userTask = prompt("Enter your task:");
+
+
+// let getHour;
+// let getTask;
+
+// function makeTimeTable (getHour,getTask){
+
+   
+//     if (isNaN(userTime)) {
+//         alert("Enter your time(Numbers only!)");
+            
+//     }
+
+//     if(!userTask){
+//         alert("Enter your task!")
+//      }  
+
+//     if(userTime || userTask){
+//         alert(userTime + `:`+ userTask)
+
+//     }else{
+//         (userTime || userTask)
+//     }
+
+//      return {
+//         getHour:userTime,
+//         getTask:userTask,
+    
+//  
+     
+//     }
+//     alert(userTime + `:`+ userTask)
+    
+ 
+//     }
+
+//     console.log(userTime + `:`+ userTask)
+//     makeTimeTable (getHour,getTask);
+
+let  userTime = (prompt("Enter your time: "));
 let  userTask = prompt("Enter your task:");
 
+ let schedule ={ 
+  getHour:userTime,
+  getTask:userTask,
 
-let getHour;
-let getTask;
+}
 
-function makeTimeTable (getHour,getTask){
-
-    for (let i = 0; i > 1; i++){  
-   
     if (isNaN(userTime)) {
         alert("Enter your time(Numbers only!)");
             
@@ -50,22 +89,16 @@ function makeTimeTable (getHour,getTask){
 
     if(userTime || userTask){
         alert(userTime + `:`+ userTask)
-        continue;
     }else{
         (userTime || userTask)
     }
 
-     return {
-        getHour:userTime,
-        getTask:userTask,
-    
-     }
-     
-    }
-    alert(userTime + `:`+ userTask)
-    
-
+function makeTimeTable(schedule) {
+    for (let makeTimeTable in schedule) {
+       return makeTimeTable
     }
 
-    console.log(userTime + `:`+ userTask)
-    makeTimeTable (getHour,getTask);
+  }
+
+  makeTimeTable(schedule)
+  console.log(userTime + `:`+ userTask)
