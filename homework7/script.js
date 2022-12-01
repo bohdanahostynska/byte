@@ -2,9 +2,9 @@
 //2//
 
 // const salaries = {
-//     John: parseFloat("4300.00"),
-//     Ann: parseFloat("5700.40"),
-//     Pete:parseFloat("4900.95"),
+//     John: "4300.00",
+//     Ann: "5700.40",
+//     Pete:"4900.95",
 //   };
   
 
@@ -16,8 +16,9 @@
 //       total += (salaries [employee])
 //       parseFloat(total)
 //     }
+//  let result = total.toFixed(2)
 
-//     return parseFloat(' 14901.35.');
+//  return result
    
 //   }
   
@@ -25,78 +26,31 @@
 //     console.log(`totalResult`, totalResult)
 
 //1//
-        
-let userTime = (prompt("Enter your time: "));
-
-
-let  userTask = prompt("Enter your task:");
-
-
-let getHour;
-let getTask;
-
-function makeTimeTable (getHour,getTask){
-
-   
-    if (isNaN(userTime)) {
-        alert("Enter your time(Numbers only!)");
-            
-    }
-
-    if(!userTask){
-        alert("Enter your task!")
-     }  
-
-    if(userTime || userTask){
-        alert(userTime + `:`+ userTask)
-
-    }else{
-        (userTime || userTask)
-    }
-
-     return {
-        getHour:userTime,
-        getTask:userTask,
-
-    }
-
     
- 
-    }
-    alert(userTime + `:`+ userTask)
-    console.log(userTime + `:`+ userTask)
-    makeTimeTable (getHour,getTask);
 
-// let  userTime = (prompt("Enter your time: "));
-// let  userTask = prompt("Enter your task:");
+const makeASchedule = () => {
 
-//  let schedule ={ 
-//   getHour:userTime,
-//   getTask:userTask,
+    const schedule ={}
+    let end = false
 
-// }
+    do{
+        let time = (prompt("Enter your time: "));
+        let task = (prompt("Enter your task: "));
 
-//     if (isNaN(userTime)) {
-//         alert("Enter your time(Numbers only!)");
-            
-//     }
+        if ((task == null || time == null)){
+            end = true
+        }else{
+        schedule[time] = task;
+        alert("Task added")
+        }
 
-//     if(!userTask){
-//         alert("Enter your task!")
-//      }  
+    }while(!end)
 
-//     if(userTime || userTask){
-//         alert(userTime + `:`+ userTask)
-//     }else{
-//         (userTime || userTask)
-//     }
+    return  schedule
 
-// function makeTimeTable(schedule) {
-//     for (let makeTimeTable in schedule) {
-//        return makeTimeTable
-//     }
+}
+let  timetable = makeASchedule()
+console.log( timetable);
 
-//   }
 
-//   makeTimeTable(schedule)
-//   console.log(userTime + `:`+ userTask)
+
