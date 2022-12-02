@@ -145,7 +145,7 @@
 //     if (number !== 0) {
 //       return true
 //   }else{
-//     false
+//     return false
 //   }
 // }
 
@@ -162,7 +162,7 @@
 //     if (number === 1) {
 //       return false
 //   }else{
-//     true
+//    return true
 //   }
 // }
 
