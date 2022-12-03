@@ -24,7 +24,7 @@
 
 
 // const getOccurrencesCount = (arr) => {
-//     let value = 0;
+//     let value = [];
    
 
 //     for (let elem of arr) {
@@ -51,20 +51,20 @@
 
 
 // }
-
 // const resultCount = getOccurrencesCount(["a", "v", "a", "b", "b"]);
 // console.log('resultCount',resultCount);
 
-// const getOccurrencesCount = (arr) => {
-//         let value = 0;
 
-//         for (let elem of arr) {
+// const getOccurrencesCount = (arr) => {
+//         let value = [];
+
+//         for (let fruit of arr) {
     
-//             if((elem === "apples") || (elem === "oranges") || (elem === "pears")){
-//                 value += elem
-//                 console.log(elem);
-//             }
-    
+//             if(fruit){
+//                 value += fruit
+//                 console.log(fruit);
+//             }  
+         
 //         }
     
 //         return value;
@@ -82,6 +82,7 @@
 //       ]);
 
 //     console.log('getCount', getCount);
+   
     
 
 //////3//////
@@ -168,3 +169,38 @@
 
 // }  
 // console.log (findExcess.filter(isPrime))
+
+const findExcess = (arr) =>{  
+    let arrayOfPrime=[]
+    number=[]
+
+// const isNumberComposite = []
+// const isPrime = []
+
+//     for (let number of arr){ 
+//         if (number === isNumberComposite) {
+//             // console.log ('number is composite',number)
+//             findExcess (number, isNumberComposite)
+//         } else {
+//             isPrime.push(number);
+//         }
+//     } 
+
+// return isNumberComposite
+// } 
+// findExcess ([1, 1, 0, 1, 1]);
+// findExcess([0, 0, 3, 0, 0]);
+
+    for (let number of arr){ 
+            if (number) {
+ 
+            } else {
+                arrayOfPrime.push(number);
+            }
+            console.log(number);
+        } 
+
+    }
+
+    findExcess ([2, 6, 8, 10, 3]);
+console.log ('findExcess',findExcess)
