@@ -171,22 +171,22 @@
 // console.log (findExcess.filter(isPrime))
 
 const findExcess = (arr) =>{  
-    let arrayOfPrime=[]
-    number=[]
+    let arrayOfOdd=[]
+    let arrayOfEven=[]
 
-// const isNumberComposite = []
-// const isPrime = []
+// const arrayOfOdd = []
+// const arrayOfEven = []
 
 //     for (let number of arr){ 
-//         if (number === isNumberComposite) {
-//             // console.log ('number is composite',number)
-//             findExcess (number, isNumberComposite)
+//         if (number === arrayOfOdd) {
+//             // console.log ('number is odd',number)
+//             findExcess (number, arrayOfOdd)
 //         } else {
-//             isPrime.push(number);
+//             arrayOfEven.push(number);
 //         }
 //     } 
 
-// return isNumberComposite
+// return arrayOfOdd
 // } 
 // findExcess ([1, 1, 0, 1, 1]);
 // findExcess([0, 0, 3, 0, 0]);
@@ -195,7 +195,7 @@ const findExcess = (arr) =>{
             if (number) {
  
             } else {
-                arrayOfPrime.push(number);
+                arrayOfOdd.push(number);
             }
             console.log(number);
         } 
