@@ -23,36 +23,41 @@
 /////////2/////
 
 
-// const getOccurrencesCount = (arr) => {
-//     let value = [];
+const getOccurrencesCount = (arr) => {
+    let value = 0;
+    let res = []
    
 
-//     for (let elem of arr) {
+    for (let elem of arr) {
 
-//         if (elem === 'a'){
-//             value += elem
-//             console.log(elem);
-//         }
+        if (!elem ){
+            value += elem
+            console.log(elem);
+        }else{
+            res.push(elem)
+            console.log(res,value);
+        }
+
         
-//         if (elem === 'b'){
-//             value += elem
-//             console.log(elem);
+        // if (elem === 'b'){
+        //     value += elem
+        //     console.log(elem);
 
-//         }
+        // }
         
-//         if(elem === 'v'){
-//             value += elem
-//             console.log(elem);
-//         }
+        // if(elem === 'v'){
+        //     value += elem
+        //     console.log(elem);
+        // }
 
-//     }
+    }
 
-//     return value;
+    return value;
 
 
-// }
-// const resultCount = getOccurrencesCount(["a", "v", "a", "b", "b"]);
-// console.log('resultCount',resultCount);
+}
+const resultCount = getOccurrencesCount(["a", "v", "a", "b", "b"]);
+console.log('resultCount',resultCount);
 
 
 // const getOccurrencesCount = (arr) => {
@@ -216,24 +221,24 @@
 //             } else {
 
 
-const findExcess = (arr,arrayOfOdd =[], arrayOfEven = []) =>{ 
+// const findExcess = (arr,arrayOfOdd =[], arrayOfEven = []) =>{ 
 
-    for (let number of arr){ 
-            if (Array.isArray (number)) {
-                console.log('number is even',number);
-                findExcess(number, arrayOfEven )
-            } else {
-                arrayOfEven.push (number);
-                console.log('number is odd',number);
+//     for (let number of arr){ 
+//             if (Array.isArray (number)) {
+//                 console.log('number is even',number);
+//                 findExcess(number, arrayOfEven )
+//             } else {
+//                 arrayOfEven.push (number);
+//                 console.log('number is odd',number);
                
-            }
+//             }
       
-        } 
-        return  arrayOfEven
+//         } 
+//         return  arrayOfEven
        
-    }
+//     }
  
-   const evenArray = findExcess ([2, 6, 8, 10, 3]);
-console.log ('evenArray',evenArray)
+//    const evenArray = findExcess ([2, 6, 8, 10, 3]);
+// console.log ('evenArray',evenArray)
 
        
