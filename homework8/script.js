@@ -192,23 +192,48 @@
 // findExcess([0, 0, 3, 0, 0]);
 
 
-const findExcess = (arr) =>{ 
+// const findExcess = (arr) =>{ 
 
-   const arrayOfOdd = []
-   const arrayOfEven = []
+//    const arrayOfOdd = []
+//    const arrayOfEven = []
+
+//     for (let number of arr){ 
+//             if ( number) {
+//                 console.log('number is even',number);
+//             } else {
+//                 arrayOfOdd.push (number);
+//                 console.log('number is odd',number);
+//             }
+//             console.log(number);
+//         } 
+//         return  arrayOfEven
+
+//     }
+
+//    const evenArray = findExcess ([2, 6, 8, 10, 3]);
+// console.log ('evenArray',evenArray)
+
+//             } else {
+
+
+const findExcess = (arr,arrayOfOdd =[], arrayOfEven = []) =>{ 
 
     for (let number of arr){ 
-            if ( number) {
+            if (Array.isArray (number)) {
                 console.log('number is even',number);
+                findExcess(number, arrayOfEven )
             } else {
-                arrayOfOdd.push(number);
+                arrayOfEven.push (number);
                 console.log('number is odd',number);
+               
             }
-            console.log(number);
+      
         } 
         return  arrayOfEven
-
+       
     }
-
+ 
    const evenArray = findExcess ([2, 6, 8, 10, 3]);
 console.log ('evenArray',evenArray)
+
+       
