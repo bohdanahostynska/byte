@@ -170,9 +170,9 @@
 // }  
 // console.log (findExcess.filter(isPrime))
 
-const findExcess = (arr) =>{  
-    let arrayOfOdd=[]
-    let arrayOfEven=[]
+// const findExcess = (arr) =>{  
+//     let arrayOfOdd=[]
+//     let arrayOfEven=[]
 
 // const arrayOfOdd = []
 // const arrayOfEven = []
@@ -191,16 +191,24 @@ const findExcess = (arr) =>{
 // findExcess ([1, 1, 0, 1, 1]);
 // findExcess([0, 0, 3, 0, 0]);
 
+
+const findExcess = (arr) =>{ 
+
+   const arrayOfOdd = []
+   const arrayOfEven = []
+
     for (let number of arr){ 
-            if (number) {
- 
+            if ( number) {
+                console.log('number is even',number);
             } else {
                 arrayOfOdd.push(number);
+                console.log('number is odd',number);
             }
             console.log(number);
         } 
+        return  arrayOfEven
 
     }
 
-    findExcess ([2, 6, 8, 10, 3]);
-console.log ('findExcess',findExcess)
+   const evenArray = findExcess ([2, 6, 8, 10, 3]);
+console.log ('evenArray',evenArray)
