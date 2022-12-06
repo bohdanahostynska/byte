@@ -65,123 +65,38 @@
 //////3//////
   
 // (1)
-// const findExcess = (arr) =>{ 
+
+ const findExcess = (arr) =>{ 
   
 
-//     const arrayOfOdd = []
-//     const arrayOfEven = []
+    const arrayOfOdd = []
+    const arrayOfEven = []
  
-//      for (let number of arr){ 
-//              if (  ( number % 2 == 0)) {
-//                  console.log('number is even',number);
-//              } else {
-//                  arrayOfOdd.push (number);
-//                  console.log('number is odd',number);
-//              }
-//              console.log(number);
-//          } 
-//          return  arrayOfEven
+     for (let number of arr){ 
+             if (  ( number % 2 == 0)) {
+                 console.log('number is even',number);
+             } else {
+                 arrayOfOdd.push (number);
+                 console.log('number is odd',number);
+             }
+             console.log(number);
+
+               if (  !( number % 2 == 0)) {
+                     console.log('number is odd',number);
+                 } else {
+                     arrayOfEven.push (number);
+                     console.log('number is even',number);
+                 }
+                 console.log(number);
+
+         } 
+         return  arrayOfEven
  
-//      }
+     }
 
-//      const evenArray = findExcess([0, 1, 2]);
-//      console.log ('evenArray',evenArray)
-
-// (2)
-
-
-// const findExcess = (arr) =>{ 
-  
-
-//     const arrayOfOdd = []
-//     const arrayOfEven = []
- 
-//      for (let number of arr){ 
-//              if (!( number % 2 == 0)) {
-//                 console.log('number is odd',number);
-                 
-//              } else {
-//                 arrayOfEven.push (number);
-//                  console.log('number is even',number);
-//              }
-//              console.log(number);
-//          } 
-//          return  arrayOfOdd
- 
-//      }
-
-//      const evenArray = findExcess ([1, 2, 3]);
-//      console.log ('evenArray',evenArray)
-
-
-//(3)
-// const findExcess = (arr) =>{ 
-
-//    const arrayOfOdd = []
-//    const arrayOfEven = []
-
-//     for (let number of arr){ 
-//             if (  ( number % 2 == 0)) {
-//                 console.log('number is even',number);
-//             } else {
-//                 arrayOfOdd.push (number);
-//                 console.log('number is odd',number);
-//             }
-//             console.log(number);
-//         } 
-//         return  arrayOfEven
-
-//     }
-
-//    const evenArray = findExcess ([2, 6, 8, 10, 3]);
-// console.log ('evenArray',evenArray)
-
-//4//
-
-
-// const findExcess = (arr) =>{ 
-
-//    const arrayOfOdd = []
-//    const arrayOfEven = []
-
-//     for (let number of arr){ 
-//             if (  ( number % 2 == 0)) {
-//                 console.log('number is even',number);
-//             } else {
-//                 arrayOfOdd.push (number);
-//                 console.log('number is odd',number);
-//             }
-//             console.log(number);
-//         } 
-//         return  arrayOfEven
-
-//     }
-
-//    const evenArray = findExcess ([0, 0, 3, 0, 0]);
-// console.log ('evenArray',evenArray)
-
-//5//
-
-
-// const findExcess = (arr) =>{ 
-  
-
-//     const arrayOfOdd = []
-//     const arrayOfEven = []
- 
-//      for (let number of arr){ 
-//              if (!( number % 2 == 0)) {
-//                 console.log('number is odd',number);
-                 
-//              } else {
-//                 arrayOfEven.push (number);
-//                  console.log('number is even',number);
-//              }
-//              console.log(number);
-//          } 
-//          return  arrayOfOdd
- 
-//      }
-
-//      const evenArray = findExcess ([1, 1, 0, 1, 1]);
-//      console.log ('evenArray',evenArray)
+     const evenArray = findExcess([0, 1, 2]);
+    //  const evenArray = findExcess ([1, 2, 3]);
+    //  const evenArray = findExcess ([2, 6, 8, 10, 3]);
+    //  const evenArray = findExcess ([0, 0, 3, 0, 0]);
+    //  const evenArray = findExcess ([1, 1, 0, 1, 1]);
+     console.log ('evenArray',evenArray)
