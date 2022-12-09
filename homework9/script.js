@@ -64,10 +64,10 @@
 
 
 //////2/////
-// const isNegative = (number) => number < 0;
-// const increment = (number) => number + 1;
+
+
 // const logger = (element, index, array) => {
-//   console.log(`In array [${array}] on position ${index}: ${element}`);
+//   console.log(`In array [${arr}] on position ${index}: ${element}`);
 // };
 
 // const ownForEach = (arr, logger) => {
@@ -77,13 +77,117 @@
 // }
 // ownForEach([1, 2, 3, 4 ,5], logger);
 
-// let arr =[1,2,3]
-// const ownMap = arr.map((number) => (number)+1)
-// console.log('ownMap ',ownMap );
+
+////////////
+
+// const increment = (number) => number + 1;
+// const ownMap = (arr,increment)=> {
+
+//     let arrClone = [];
+
+//     for (let number of arr) {
+//             arrClone.push(increment(number))   
+        
+//     }
+//     return arrClone;
+// }
+
+// const result = ownMap([1, 2, 3, 4 ,5],increment);
+// console.log('result',result);
+
+/////////////////
+
+// const isNegative = (number) => number < 0;
+// const ownFilter = (arr,isNegative)=> {
+
+//     let arrClone = [];
+
+//     for (let number of arr) {
+
+//         if(isNegative(number)){  
+//             arrClone.push(number)  
+//         }
+//     }
+//     return arrClone;
+// }
+
+// const result =  ownFilter([-2, 4, -1 ,5,-6],isNegative);
+// console.log('result',result);
+
+// ///3///
+// const data = [
+//     {
+//       name: "John",
+//       age: 24,
+//       position: "senior",
+//       isActive: false,
+
+//     },
+//     {
+//       name: "Peter",
+//       age: 33,
+//       position: "middle",
+//       isActive: false,
+
+//     },
+//     {
+//       name: "Sam",
+//       age: 29,
+//       position: "junior",
+//       isActive: true,
+
+//     },
+//     {
+//       name: "Mary",
+//       age: 24,
+//       position: "middle",
+//       isActive: false,
+
+//     },
+//     {
+//       name: "Steve",
+//       age: 23,
+//       position: "middle",
+//       isActive: true,
+
+//     },
+//     {
+//       name: "Kate",
+//       age: 31,
+//       position: "middle",
+//       isActive: false,
+
+//     },
+//     {
+//       name: "Sally",
+//       age: 19,
+//       position: "junior",
+//       isActive: false,
+//     },
+//     {
+//       name: "Jack",
+//       age: 19,
+//       position: "middle",
+//       isActive: true,
+//     },
+//   ];
+  
+  
+
+// const filterData =(dataArray ,objectToFilter) =>{
+//     let result = dataArray.filter(item => {
+
+//    console.log('keys:',Object.keys(objectToFilter))
+
+//     return Object.keys(objectToFilter).every(key=>{
+
+//         return item[key] === objectToFilter[key]
+//     })
+//     })
+//     return result
 
 
 
-// ownFilter([-2, 4, -1, 3, 5,-6])
-
-// .filter((number) => number<0)
-// console.log('ownFilter',ownFilter,isNegative);
+// }
+// const resFilt = filterData(data, { age:19})
+// console.log('resFilt ',resFilt );
