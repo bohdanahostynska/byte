@@ -118,6 +118,7 @@ const addBook = () => {
     id: generateBookId(),
   };
 
+  
   console.log(`newBook`, newBook);
   books.push(newBook);
 
