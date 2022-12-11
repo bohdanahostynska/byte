@@ -108,19 +108,19 @@
 // }
 // console.log(visitorsAge)
 
-const visitorsAge = Number(prompt("Скільки вам років?"));
-let withAdults = confirm("Ви з дорослими?");
+// const visitorsAge = Number(prompt("Скільки вам років?"));
+// let withAdults = confirm("Ви з дорослими?");
 
-if (((visitorsAge >= 12 && visitorsAge < 18) && withAdults) || visitorsAge >= 18 && visitorsAge <= 60) {
-    alert("Ласкаво просимо!");
-} else if (visitorsAge >  18) {
-    alert("Ласкаво просимо!");
-} else if (visitorsAge < 12) {
-    alert("Вибачте,але ви не можете увійти");
-} else if (visitorsAge > 80) {
-    alert("Вибачте,але ви не можете увійти");
-} else {
-    alert("Можете увійти лише з дорослими");
-}
+// if (((visitorsAge >= 12 && visitorsAge < 18) && withAdults) || visitorsAge >= 18 && visitorsAge <= 60) {
+//     alert("Ласкаво просимо!");
+// } else if (visitorsAge >  18) {
+//     alert("Ласкаво просимо!");
+// } else if (visitorsAge < 12) {
+//     alert("Вибачте,але ви не можете увійти");
+// } else if (visitorsAge > 80) {
+//     alert("Вибачте,але ви не можете увійти");
+// } else {
+//     alert("Можете увійти лише з дорослими");
+// }
 
-console.log(visitorsAge)
+// console.log(visitorsAge)

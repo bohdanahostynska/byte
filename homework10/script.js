@@ -68,7 +68,7 @@ const takeBook = () => {
   }
 
   if (desiredBook.isReading) {
-    alert("Sorry, this book is being read by someone else");
+    alert("Sorry, this book is currently unavailable.");
 
     return;
   }
@@ -98,13 +98,13 @@ const returnBook = () => {
   }
 
   if (!currentBook.isReading) {
-    alert("This book is not being read now");
+    alert("This book is available");
 
     return;
   }
 
   currentBook.isReading = false;
-  alert(`Thanks, come back to us again! Do you like "${currentBook.name}"? `);
+  alert(`Thanks, come back to us again! Did you enjoy reading "${currentBook.name}"? `);
 };
 
 const addBook = () => {
