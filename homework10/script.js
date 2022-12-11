@@ -2,20 +2,25 @@ const actionButton = document.querySelector("button");
 actionButton.addEventListener("click", library);
 
 const books = [
-  { id: 1, author: "A", name: "B", isReading: false },
-  { id: 2, author: "A", name: "C", isReading: false },
-  { id: 3, author: "A", name: "D", isReading: false },
-  { id: 4, author: "A", name: "E", isReading: false },
-  { id: 5, author: "A", name: "F", isReading: false },
-];
+  { id: 1, author: "Фіцджеральд", name: "Великий Гетсбі", isReading: false },
+  { id: 2, author: "Шевченко", name: "Катерина", isReading: false },
+  { id: 3, author: "Оруел", name: "1984", isReading: false },
+  { id: 4, author: "Сервантес", name: "Дон Кіхот", isReading: false },
+  {
+    id: 5,
+    author: "Джейн Остін",
+    name: "Гoрдість і упередження",
+    isReading: false,
+  }
+]
 
 
 function library() {
-  let action = prompt("Action?");
+ 
+let action = prompt("Action?");
 
   if (action === null) {
     alert("Bye!");
-
     return;
   }
 
@@ -34,7 +39,7 @@ function library() {
     default:
       alert("No action!");
   }
-}
+ }
 
 const takeBook = () => {
   const availableBooksNames = books
@@ -63,7 +68,7 @@ const takeBook = () => {
   }
 
   if (desiredBook.isReading) {
-    alert("Sorry, this book is reading by someone else");
+    alert("Sorry, this book is being read by someone else");
 
     return;
   }
@@ -93,13 +98,13 @@ const returnBook = () => {
   }
 
   if (!currentBook.isReading) {
-    alert("This book is not reading now");
+    alert("This book is not being read now");
 
     return;
   }
 
   currentBook.isReading = false;
-  alert(`Thanks, come again! Do you like "${currentBook.name}"? `);
+  alert(`Thanks, come back to us again! Do you like "${currentBook.name}"? `);
 };
 
 const addBook = () => {
