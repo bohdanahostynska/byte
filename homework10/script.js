@@ -44,12 +44,12 @@ let action = prompt("Action?");
 const takeBook = () => {
   const availableBooksNames = books
     .filter((book) => !book.isReading)
-    .map((book) => ` - ${book.name}`)
+    .map((book) => ` - ${book.name} ${book.author}`)
     .join("\n");
 
-  let desiredBookName = prompt(`Enter book name:\n${availableBooksNames}`);
+  let desiredBookName = prompt(`Enter book name:\n${availableBooksNames}\n${availableBooksAuthor}||`);
 
-  if (!desiredBookName) {
+  if ((!desiredBookName)||(!desiredBookAuthor)){
     alert("No book name");
 
     return;
@@ -136,3 +136,6 @@ function generateBookId () {
 
   return generatedId;
 }
+
+
+
