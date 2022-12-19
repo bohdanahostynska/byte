@@ -38,7 +38,7 @@ const createListFromAray = (arr) => {
         </div>
         `);
 
-        list.appendChild(listItem);
+        list.append(listItem);
     });
 
     document.body.append(list)
