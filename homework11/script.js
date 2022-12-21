@@ -21,7 +21,7 @@ const products = [
     },
 ]
 
-const createListFromAray = (arr) => {
+const createListFromArray = (arr) => {
 
     const list = document.createElement("div");
     const listItem = document.createElement("div");
@@ -43,4 +43,4 @@ const createListFromAray = (arr) => {
 
     document.body.append(list)
 }
-createListFromAray(products)
+createListFromArray(products)
