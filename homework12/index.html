@@ -7,12 +7,18 @@
     <title>Document</title>
     <style>
         .example {
-          width: 300px;
+          width: 100px;
           margin-bottom: 20px;
+          padding-left:30px;
+          padding:20px,0 20px;
+         
+      
         }
   
         .border {
-          border: 1px solid black;
+          border: 1px solid rgb(160, 55, 55);
+          border-radius: 5px;
+       
         }
   
         .red {
@@ -20,7 +26,7 @@
         }
   
         .blue {
-          color: blue;
+          color: rgb(37, 37, 108);
         }
   
         .dashed {
@@ -30,12 +36,69 @@
         .large {
           font-size: 20px;
         }
+
+        
+      .chessboard {
+        border-collapse: collapse;
+      }
+
+      .chessboard-cell {
+        width: 20px;
+        height: 20px;
+        border: 1px solid black;
+      }
+
+      .chessboard-cell--dark {
+        background-color: black;
+      }
+
+      .example-four {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        margin: 20px 0;
+      }
+/* 
+      .example-five {
+        display: flex;
+      }
+
+      .example-five div {
+        width: calc((100% / 3) - 25px);
+        margin-right: 15px;
+        height: 200px;
+      }
+
+      .example-five div:nth-child(1) {
+        background-color: rebeccapurple;
+      }
+
+      .example-five div:nth-child(2) {
+        background-color: rgb(177, 109, 85);
+      }
+
+      .example-five div:nth-child(3) {
+        background-color: cadetblue;
+      } */
+
      </style> 
 </head>
 <body>
-    <script src="./script.js"></script>
-</body>
- <div id="exampleOne" class="example border red">Example 1</div>
-    <!-- <div id="exampleTwo" class="example border red">Example 2</div> -->
+  <!-- <div id="exampleOne" class="example border red">Button</div>
+  <div id="exampleTwo" class="example border red">Example 2</div>
+      <div id="exampleThree" class="example border red">Example 3</div>  -->
 
+  <button id="toggle">Toggle table</button>
+  <!-- <div
+    id="exampleFour"
+    class="example-four"
+    style="border: 1px solid red"
+  ></div> 
+  <div id="exampleFive" class="example-five">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div> -->
+    <script src="./script.js"></script>
+  </body>
 </html>
