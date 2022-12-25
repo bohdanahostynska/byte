@@ -34,40 +34,15 @@
         .tooltip{
           width: 150px;
           position:absolute;
-          /* top:50px;
-          left:20px; */
           
-        }
-
-
-        .tooltip:hover{
-          color: #000;
-          position: absolute;
-           content: attr(data-tooltip); 
-          transition: all .2s ease-in-out .25s; 
-
-        } 
-
-        .border-one {
-          border: 2px solid rgb(118, 170, 231);
-          border-radius: 10px;
-          border-bottom-right-radius: 1px;
-        }
-
-        .large-one {
-          font-size: 20px;
-        }
-        .blue-one {
-          color: rgb(105, 110, 185);
-          background-color: rgb(241, 241, 241);
-        }
+          
+        }  
   
 
      </style> 
 </head>
  <body>
-<div   id="tooltip"class="tooltip border-one blue-one large-one">I'm a tooltip!</div>
-<button id ="toggle" class = "button border blue large" >Button</button>
+<button   data-tooltip ="I'm a tooltip!" class=" button border blue large">Button</button>
    <script src="./script.js">tippy('.tooltip', { arrow: true });</script>
   </body>
 </html>
