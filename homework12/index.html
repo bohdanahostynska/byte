@@ -9,8 +9,8 @@
 
         .button {
           width: 100px;
-          margin-top: 100px;
-          margin-left:150px;
+          margin-top: 30px;
+          margin-left:100px;
           position:relative;
          
         }
@@ -31,20 +31,29 @@
           font-size: 20px;
         }
 
-        .example{
+        .tooltip{
           width: 150px;
           position:absolute;
-          top:50px;
-          left:20px;
+          /* top:50px;
+          left:20px; */
           
         }
+
+
+        .tooltip:hover{
+          color: #000;
+          position: absolute;
+           content: attr(data-tooltip); 
+          transition: all .2s ease-in-out .25s; 
+
+        } 
 
         .border-one {
           border: 2px solid rgb(118, 170, 231);
           border-radius: 10px;
           border-bottom-right-radius: 1px;
-       
         }
+
         .large-one {
           font-size: 20px;
         }
@@ -56,10 +65,11 @@
 
      </style> 
 </head>
-<body>
-  
-  <button id="toggle"class="button border blue large">Button</button>
-   <div id="Tooltip" class="example border-one blue-one large-one">Tooltip for the button</div>
-    <script src="./script.js"></script>
+ <body>
+<div   id="tooltip"class="tooltip border-one blue-one large-one">I'm a tooltip!</div>
+<button id ="toggle" class = "button border blue large" >Button</button>
+   <script src="./script.js">tippy('.tooltip', { arrow: true });</script>
   </body>
 </html>
+
+
