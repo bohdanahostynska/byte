@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .example {
+      width: 400px;
+      border: 1px solid black;
+      border-radius: 5px;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 22px;
+    }
+
+    .keyboard {
+        display: grid;
+        /* width: 60px; */
+        justify-content: start;
+        align-content: start;
+        justify-items: start;
+        justify-self: start;
+
+        grid-template-columns: repeat(3, 60px);
+        grid-gap: 16px;
+      }
+
+      .keyboard-item {
+        text-transform: uppercase;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 24px;
+        text-align: center;
+        background: #fff;
+        border: 1px solid #000;
+        border-radius: 5px;
+      }
+
+      .keyboard-item--pressed {
+        background-color: antiquewhite;
+      }
+    
+</style>
+<title>Mouse, Keyboard & Window Events</title>
+</head>
+<body>
+    <div class="example" id="clicks">
+        <p>Clicks example</p>
+        <p>Clicks: <span id="clicksCounter">0</span></p>
+      </div>
+      <!-- <div class="example" id="moves">
+        <p>Moves example</p>
+      </div> -->
+
+      <div class="keyboard" id="keyboard">
+        <div class="keyboard-item">q</div>
+        <div class="keyboard-item">w</div>
+        <div class="keyboard-item">e</div>
+        <div class="keyboard-item">a</div>
+        <div class="keyboard-item">s</div>
+        <div class="keyboard-item">d</div>
+      </div>
+  
+
+    <script src="./script.js"></script>
+</body>
+</html>
