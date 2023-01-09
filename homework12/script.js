@@ -45,3 +45,4 @@
   const button = document.querySelector('.button');
   const buttonCoords = button.getBoundingClientRect();
   console.log(`buttonCoords`, buttonCoords);
+
