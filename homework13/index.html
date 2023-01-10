@@ -1,104 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 
 <style>
+  .container {
+    width: 890px;
+    overflow: hidden;
+    border: 2px solid black;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+  }
 
-    /* .container {
-      height: 500px;
-      position: relative;
-      transition: ease-out 500ms;
-      overflow: hidden;
-      margin: 10px;
-      display: flex;
-     flex-direction: column;
-    } */
+  .slider-wrapper {
+    width: 9999px;
+    height: 683px;
+    position: relative;
+    transition: left 500ms linear;
+  }
 
+  .slider {
+    float: left;
+    position: relative;
+    width: 890px;
+    height: 683px;
 
-    .container{
-      width: 890px;
-	    overflow: hidden;
-      border: 2px solid black;
-      top: 50%;
-      left: 50%;
-      /* transform: translate(-50%, -50%); */
-      cursor: pointer;
-    }
+  }
 
-    .slider-wrapper {
-	width: 9999px;
-	height: 683px;
-	position: relative;
-	transition: left 500ms linear;
-}
+  .slider-nav {
+    height: 40px;
+    width: 100%;
+    margin-top: 1.5em;
+  }
 
-.slider {
-	float: left;
-	position: relative;
-	width: 890px;
-	height: 683px;
+  .slider-nav button {
+    border: none;
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+  }
 
-}
-/* 
-    .button{
-        height:30px;
-        width:60px;
-        border: 2px solid black;
-        cursor: pointer;
-        margin-right: 10px;
-        background-color: rgb(236, 208, 208);
+  .slider-nav button.slider-previous {
+    float: left;
+    background-image: url();
+  }
 
-    } */
+  .slider-nav button.slider-next {
+    float: right;
+    background-image: url();
+  }
+</style>
 
-    .slider-nav {
-	height: 40px;
-	width: 100%;
-	margin-top: 1.5em;
-}
-
-.slider-nav button {
-	border: none;
-	display: block;
-	width: 40px;
-	height: 40px;
-	cursor: pointer;
-	/* text-indent: -9999em; */
-	/* background-color: transparent; */
-	background-repeat: no-repeat;
-}
-
-.slider-nav button.slider-previous {
-	float: left;
-	background-image:url();
-}
-
-.slider-nav button.slider-next {
-	float: right;
-	background-image: url();
-}
-
-  </style>
-  <body>
-    <div class="container" id="container">
-      <div class="slider-wrapper" id="wrapper">
-             <img src="./img/1.jpg" alt="logo"class="slider"/>
-             <img src="./img/2.jpg"alt="logo"class="slider"/>
-             <img src="./img/3.jpg"alt="logo"class="slider"/>
-             <img src="./img/4.jpg" alt="logo"class="slider"/>
-            </div>
-            <div class="slider-nav">
-                <button type ="button"id = "button-left" class = "slider-previous">Prev</button>
-                <button  type="button"id = "button-right" class ="slider-next">Next</button>
-            </div>
-      </div>
-
+<body>
+  <div class="container" id="container">
+    <div class="slider-wrapper" id="wrapper">
+      <img src="./img/1.jpg" alt="logo" class="slider" />
+      <img src="./img/2.jpg" alt="logo" class="slider" />
+      <img src="./img/3.jpg" alt="logo" class="slider" />
+      <img src="./img/4.jpg" alt="logo" class="slider" />
     </div>
+    <div class="slider-nav">
+      <button type="button" id="button-left" class="slider-previous">Prev</button>
+      <button type="button" id="button-right" class="slider-next">Next</button>
+    </div>
+  </div>
 
-    <script src="./script.js"></script>
+  </div>
+
+  <script src="./script.js"></script>
 </body>
+
 </html>
