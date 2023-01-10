@@ -20,9 +20,9 @@
     } */
 
 
-    .slider{
-      width: 1024px;
-	  overflow: hidden;
+    .container{
+      width: 890px;
+	    overflow: hidden;
       border: 2px solid black;
       top: 50%;
       left: 50%;
@@ -37,7 +37,7 @@
 	transition: left 500ms linear;
 }
 
-.slide {
+.slider {
 	float: left;
 	position: relative;
 	width: 890px;
@@ -84,16 +84,16 @@
 
   </style>
   <body>
-    <div class="slider" id="main slider">
-      <div class="slider-wrapper">
-             <img src="./img/1.jpg" alt="logo"class="slider__item"/>
-             <img src="./img/2.jpg"alt="logo"class="slider__item"/>
-             <img src="./img/3.jpg"alt="logo"class="slider__item"/>
-             <img src="./img/4.jpg" alt="logo"class="slider__item"/>
+    <div class="container" id="container">
+      <div class="slider-wrapper" id="wrapper">
+             <img src="./img/1.jpg" alt="logo"class="slider"/>
+             <img src="./img/2.jpg"alt="logo"class="slider"/>
+             <img src="./img/3.jpg"alt="logo"class="slider"/>
+             <img src="./img/4.jpg" alt="logo"class="slider"/>
             </div>
             <div class="slider-nav">
-                <button type ="button" class = "slider-previous">Prev</button>
-                <button  type ="button" class ="slider-next">Next</button>
+                <button type ="button"id = "button-left" class = "slider-previous">Prev</button>
+                <button  type="button"id = "button-right" class ="slider-next">Next</button>
             </div>
       </div>
 
